@@ -1,0 +1,17 @@
+<html>
+<head>
+
+</head>
+<body>
+ <div>
+  <% for(let i=0; i<users.length; i++){ %>
+    <% if(name.name.toUpperCase()==users[i].firstname.toUpperCase() || name.name.toUpperCase()==users[i].lastname.toUpperCase()){%>
+      <%=users[i].firstname %>
+      <%=users[i].lastname %>
+      </br>
+      <%=users[i].email %>
+        <%}%>
+  <%}%>
+ </div>
+</body>
+</html>
