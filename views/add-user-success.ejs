@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Overview of all the users (including added ones)</title>
+</head>
+
+<body>
+
+<h1>Overview of all the users</h1>
+<ul>
+<% for(var i = 0 ; i < users.length ; i++) { %>
+  <li><%= users[i].firstname + " " + users[i].lastname %></li>
+<% } %>
+</ul>
+
+</body>
+
+</html>
+                                                                        

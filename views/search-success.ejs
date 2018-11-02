@@ -1,0 +1,23 @@
+
+
+
+ <h1>Search result</h1>
+
+ <%let number_of_results = 0;%>
+
+ <% for(var i = 0 ; i < users.length ; i++) { %>
+   <% if(users[i].firstname == data.Name) { %>
+     <li><%= users[i].firstname + " " + users[i].lastname %></li>
+     <% number_of_results++ %>
+   <%}%>
+ <% } %>
+
+ <%# In case no matches are found %>
+ <% if(number_of_results < 1) { %>
+   <p>No matches found for: <%= data.Name %>!</p>
+ <%}%>
+
+ <script>
+  
+ </script>
+

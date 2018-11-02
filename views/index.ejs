@@ -8,9 +8,7 @@
 	
 	<ul>
   <% users.forEach(function(user){ %>
-   <li> <%= user.firstname %> </li>
-    <li> <%= user.lastname %> </li>
-     <li> <%= user.email %> </li>
+   <li> <%= user.firstname %> - <%= user.lastname %> - <%= user.email %></li>
   <% }); %>
 	</ul>
 
